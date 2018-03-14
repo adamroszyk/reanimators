@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class BookContent : MonoBehaviour
 {
-
-	void Start () {
+	void Start ()
+    {
 		
 	}
-
 
     private void OnTriggerEnter(Collider other)
     {

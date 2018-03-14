@@ -13,4 +13,12 @@ public class TurnPage : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "RightPage")
+        {
+            Debug.Log("Trigger Animation");
+        }
+    }
 }
