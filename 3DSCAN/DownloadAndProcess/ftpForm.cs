@@ -30,7 +30,7 @@ namespace DownloadDataFTP
         {
             txtFTPAddress.Text = "ftp://vrowser.e-kei.pl/public_html/HACKATON/";
             txtUsername.Text = "adam";
-            txtPassword.Text = ""
+            txtPassword.Text = "###Admin123";
 
             startRefreshing();
            // DoAll();
@@ -218,6 +218,7 @@ namespace DownloadDataFTP
                 {
                     downloadFile(txtFTPAddress.Text, file, txtUsername.Text, txtPassword.Text);
 
+
                     FileStream newFile = new FileStream(file, FileMode.Create);
                     newFile.Write(downloadedData, 0, downloadedData.Length);
                     newFile.Close();
@@ -229,20 +230,42 @@ namespace DownloadDataFTP
 
         private void checkIfCanProcess()
         {
+            String searchFolder = Path.GetDirectoryName(Application.ExecutablePath);
+            var filters = new String[] { "jpg", "jpeg"};
+            var files = GetFilesFrom(searchFolder, filters, false);
+
+            int cnt = 0;
+            foreach (string file in files)
+            {
+                cnt++;
+                Console.WriteLine(file);
+                Console.WriteLine(Path.GetDirectoryName(Application.ExecutablePath)+"\\PHO");
+                File.Move(file, Path.GetDirectoryName(Application.ExecutablePath) + "\\PHO\\"+ cnt+".jpg");
+            }
+
+
+
 
             int fCount = Directory.GetFiles(System.IO.Path.GetDirectoryName(Application.ExecutablePath), "*", SearchOption.TopDirectoryOnly).Length-4;
             Console.WriteLine(fCount);
             if (fCount >= 5) {
                 startPhotogrammetryProcess();
-                //Application.Exit();
-                string strCmdText;
-                strCmdText = "--workspace_path C:\\Users\\HPZVRBackpack\\Desktop\\DownloadAndProcess\\bin\\Debug\\WRK --image_path C:\\Users\\HPZVRBackpack\\Desktop\\DownloadAndProcess\\bin\\Debug" ;
-                //Process.Start("colmap", strCmdText);
-                var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "colmap.bat");
-                Console.Write(path);
-                Process.Start(new ProcessStartInfo(path, strCmdText));
 
-                Console.WriteLine("COLMAP");
+                string strCmdText;
+                strCmdText = "automatic_reconstructor --workspace_path WRK --image_path PHO";
+                System.Diagnostics.Process.Start("C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP", strCmdText);
+
+
+                /*
+                Process pProcess = new Process();
+
+                pProcess.StartInfo.FileName = "C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP";
+
+                pProcess.StartInfo.UseShellExecute = false;
+
+                pProcess.Start();*/
+
+
             }
         }
 
@@ -255,6 +278,17 @@ namespace DownloadDataFTP
         private void btnSave_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public static String[] GetFilesFrom(String searchFolder, String[] filters, bool isRecursive)
+        {
+            List<String> filesFound = new List<String>();
+            var searchOption = isRecursive ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
+            foreach (var filter in filters)
+            {
+                filesFound.AddRange(Directory.GetFiles(searchFolder, String.Format("*.{0}", filter), searchOption));
+            }
+            return filesFound.ToArray();
         }
     }
 }

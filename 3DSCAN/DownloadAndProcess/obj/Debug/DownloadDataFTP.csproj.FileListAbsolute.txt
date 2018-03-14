@@ -18,3 +18,13 @@ C:\Users\HPZVRBackpack\Desktop\DownloadAndProcess\obj\Debug\DownloadDataFTP.cspr
 C:\Users\HPZVRBackpack\Desktop\DownloadAndProcess\obj\Debug\DownloadDataFTP.csproj.CoreCompileInputs.cache
 C:\Users\HPZVRBackpack\Desktop\DownloadAndProcess\obj\Debug\DownloadDataFTP.exe
 C:\Users\HPZVRBackpack\Desktop\DownloadAndProcess\obj\Debug\DownloadDataFTP.pdb
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.csprojResolveAssemblyReference.cache
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.ftpForm.resources
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.listDialogForm.resources
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.Properties.Resources.resources
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.csproj.GenerateResource.cache
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.csproj.CoreCompileInputs.cache
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.exe
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\obj\Debug\DownloadDataFTP.pdb
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\bin\Debug\DownloadDataFTP.exe
+C:\Users\HPZVRBackpack\Desktop\REPO\reanimators\3DSCAN\DownloadAndProcess\bin\Debug\DownloadDataFTP.pdb
