@@ -278,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 252023452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.257, z: -0.821}
+  m_LocalPosition: {x: 0, y: 0.345, z: -0.732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 195265160}
@@ -295,6 +295,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf87bfd9c3be743b1f374a1fc40af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animRightPage: {fileID: 382503244}
+  resetPosition: {fileID: 679227891}
+  objectToReset: {fileID: 2106867596}
 --- !u!65 &252023455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -350,10 +353,30 @@ Prefab:
       propertyPath: m_TagString
       value: RightPage
       objectReference: {fileID: 0}
+    - target: {fileID: 114930239104900692, guid: 52b009c03b05733468b9bfd1923249f8,
+        type: 2}
+      propertyPath: detachDistance
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 59376906236256384, guid: 52b009c03b05733468b9bfd1923249f8,
+        type: 2}
+      propertyPath: m_EnableCollision
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377480552357266, guid: 52b009c03b05733468b9bfd1923249f8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.16
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114102715253276164, guid: 52b009c03b05733468b9bfd1923249f8, type: 2}
+    - {fileID: 114119586019205808, guid: 52b009c03b05733468b9bfd1923249f8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 52b009c03b05733468b9bfd1923249f8, type: 2}
   m_IsPrefabParent: 0
+--- !u!95 &382503244 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95935444130332442, guid: 52b009c03b05733468b9bfd1923249f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 382503243}
 --- !u!1 &441642628
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +945,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 918
+      value: 880
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -947,34 +970,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224000013127654674, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
     type: 2}
   m_PrefabInternal: {fileID: 653501383}
---- !u!1 &679227890 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1621017276084050, guid: 52b009c03b05733468b9bfd1923249f8,
+--- !u!4 &679227891 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4634952995127834, guid: 52b009c03b05733468b9bfd1923249f8,
     type: 2}
   m_PrefabInternal: {fileID: 382503243}
---- !u!114 &679227894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 679227890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
-  intervalOnTouch: 0.05
-  clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
-  intervalOnGrab: 0.05
-  clipOnUse: {fileID: 0}
-  strengthOnUse: 0
-  durationOnUse: 0
-  intervalOnUse: 0.05
 --- !u!1001 &686392162
 Prefab:
   m_ObjectHideFlags: 0
@@ -1685,6 +1685,11 @@ MonoBehaviour:
   uiClickPressed: 0
   menuPressed: 0
   controllerVisible: 1
+--- !u!4 &2106867596 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4377480552357266, guid: 52b009c03b05733468b9bfd1923249f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 382503243}
 --- !u!1 &2123877843
 GameObject:
   m_ObjectHideFlags: 0

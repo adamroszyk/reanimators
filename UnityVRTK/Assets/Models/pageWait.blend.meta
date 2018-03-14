@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1f14caea25147349ac47837fb13ac3a
+guid: aef0f12e94a0f56448c23daf0506a0be
 timeCreated: 1521020578
 licenseType: Free
 ModelImporter:
@@ -46,8 +46,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Default Take
       takeName: Default Take
-      firstFrame: 44
-      lastFrame: 119
+      firstFrame: 0
+      lastFrame: 3
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -66,21 +66,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.30350193
-        functionName: playSound
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.71984434
-        functionName: activateContent
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
