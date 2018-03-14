@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BookContent : MonoBehaviour
 {
-	void Start ()
-    {
-		
-	}
+    public List<PageContent> pages;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,5 +13,12 @@ public class BookContent : MonoBehaviour
         {
 
         }
+    }
+
+    public PageContent getPage(int i)
+    {
+        Debug.Log(i);
+        Debug.Log(pages[i]);
+        return pages[i];
     }
 }
