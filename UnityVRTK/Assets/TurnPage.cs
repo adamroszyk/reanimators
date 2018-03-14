@@ -39,6 +39,19 @@ public class TurnPage : MonoBehaviour
 
             currentPage++;
         }
+        else if (other.gameObject.tag == "LeftPage")
+        {
+            Debug.Log("Left Page");
+            animRightPage.SetTrigger("MovePage");
+
+            if (resetPosition != null && objectToReset != null)
+            {
+                objectToReset.position = resetPosition.position;
+                objectToReset.rotation = resetPosition.rotation;
+            }
+
+            currentPage--;
+        }
         
 
     }
