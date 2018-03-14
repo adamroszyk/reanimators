@@ -1,8 +1,0 @@
-﻿<Application
-    x:Class="Photogrammetry_Processing.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Photogrammetry_Processing"
-    RequestedTheme="Light">
-
-</Application>
