@@ -225,6 +225,7 @@ namespace DownloadDataFTP
                 }
             }
             isDownloading = false;
+
             checkIfCanProcess();
         }
 
@@ -234,46 +235,30 @@ namespace DownloadDataFTP
             var filters = new String[] { "jpg", "jpeg"};
             var files = GetFilesFrom(searchFolder, filters, false);
 
-            int cnt = 0;
+
+            if (files.Length < 8) return;
+
+                int cnt = 0;
             foreach (string file in files)
             {
                 cnt++;
                 Console.WriteLine(file);
                 Console.WriteLine(Path.GetDirectoryName(Application.ExecutablePath)+"\\PHO");
                 File.Move(file, Path.GetDirectoryName(Application.ExecutablePath) + "\\PHO\\"+ cnt+".jpg");
+                Console.WriteLine("Done transfering files");
             }
 
+            System.Threading.Thread.Sleep(2000);
+
+            string strCmdText;
+            strCmdText = "automatic_reconstructor --workspace_path WRK --image_path PHO";
+            Process.Start("C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP", strCmdText);
+            Console.WriteLine("Procedure invoked");
 
 
-
-            int fCount = Directory.GetFiles(System.IO.Path.GetDirectoryName(Application.ExecutablePath), "*", SearchOption.TopDirectoryOnly).Length-4;
-            Console.WriteLine(fCount);
-            if (fCount >= 5) {
-                startPhotogrammetryProcess();
-
-                string strCmdText;
-                strCmdText = "automatic_reconstructor --workspace_path WRK --image_path PHO";
-                System.Diagnostics.Process.Start("C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP", strCmdText);
-
-
-                /*
-                Process pProcess = new Process();
-
-                pProcess.StartInfo.FileName = "C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP";
-
-                pProcess.StartInfo.UseShellExecute = false;
-
-                pProcess.Start();*/
-
-
-            }
+            Application.Exit();
         }
 
-        private void startPhotogrammetryProcess()
-        {
-
-
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
