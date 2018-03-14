@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66826F9920590EDE006BBE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66826F9820590EDE006BBE36 /* AppDelegate.swift */; };
+		66826F9B20590EDE006BBE36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66826F9A20590EDE006BBE36 /* ViewController.swift */; };
+		66826F9E20590EDE006BBE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66826F9C20590EDE006BBE36 /* Main.storyboard */; };
+		66826FA020590EDE006BBE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66826F9F20590EDE006BBE36 /* Assets.xcassets */; };
+		66826FA320590EDE006BBE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66826FA120590EDE006BBE36 /* LaunchScreen.storyboard */; };
+		66826FAB20590F4B006BBE36 /* RecMng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66826FAA20590F4B006BBE36 /* RecMng.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66826F9520590EDE006BBE36 /* 3DSCANER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DSCANER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66826F9820590EDE006BBE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66826F9A20590EDE006BBE36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66826F9D20590EDE006BBE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66826F9F20590EDE006BBE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66826FA220590EDE006BBE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66826FA420590EDE006BBE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66826FAA20590F4B006BBE36 /* RecMng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecMng.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66826F9220590EDE006BBE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66826F8C20590EDD006BBE36 = {
+			isa = PBXGroup;
+			children = (
+				66826F9720590EDE006BBE36 /* 3DSCANER */,
+				66826F9620590EDE006BBE36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66826F9620590EDE006BBE36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66826F9520590EDE006BBE36 /* 3DSCANER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66826F9720590EDE006BBE36 /* 3DSCANER */ = {
+			isa = PBXGroup;
+			children = (
+				66826F9820590EDE006BBE36 /* AppDelegate.swift */,
+				66826F9A20590EDE006BBE36 /* ViewController.swift */,
+				66826F9C20590EDE006BBE36 /* Main.storyboard */,
+				66826F9F20590EDE006BBE36 /* Assets.xcassets */,
+				66826FA120590EDE006BBE36 /* LaunchScreen.storyboard */,
+				66826FA420590EDE006BBE36 /* Info.plist */,
+				66826FAA20590F4B006BBE36 /* RecMng.swift */,
+			);
+			path = 3DSCANER;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66826F9420590EDE006BBE36 /* 3DSCANER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66826FA720590EDE006BBE36 /* Build configuration list for PBXNativeTarget "3DSCANER" */;
+			buildPhases = (
+				66826F9120590EDE006BBE36 /* Sources */,
+				66826F9220590EDE006BBE36 /* Frameworks */,
+				66826F9320590EDE006BBE36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3DSCANER;
+			productName = 3DSCANER;
+			productReference = 66826F9520590EDE006BBE36 /* 3DSCANER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66826F8D20590EDD006BBE36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Adam;
+				TargetAttributes = {
+					66826F9420590EDE006BBE36 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 66826F9020590EDD006BBE36 /* Build configuration list for PBXProject "3DSCANER" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66826F8C20590EDD006BBE36;
+			productRefGroup = 66826F9620590EDE006BBE36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66826F9420590EDE006BBE36 /* 3DSCANER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66826F9320590EDE006BBE36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66826FA320590EDE006BBE36 /* LaunchScreen.storyboard in Resources */,
+				66826FA020590EDE006BBE36 /* Assets.xcassets in Resources */,
+				66826F9E20590EDE006BBE36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66826F9120590EDE006BBE36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66826F9B20590EDE006BBE36 /* ViewController.swift in Sources */,
+				66826FAB20590F4B006BBE36 /* RecMng.swift in Sources */,
+				66826F9920590EDE006BBE36 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66826F9C20590EDE006BBE36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66826F9D20590EDE006BBE36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66826FA120590EDE006BBE36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66826FA220590EDE006BBE36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66826FA520590EDE006BBE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66826FA620590EDE006BBE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66826FA820590EDE006BBE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQM9KSXZ2;
+				INFOPLIST_FILE = 3DSCANER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MR.test.3DSCANER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66826FA920590EDE006BBE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQM9KSXZ2;
+				INFOPLIST_FILE = 3DSCANER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MR.test.3DSCANER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66826F9020590EDD006BBE36 /* Build configuration list for PBXProject "3DSCANER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66826FA520590EDE006BBE36 /* Debug */,
+				66826FA620590EDE006BBE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66826FA720590EDE006BBE36 /* Build configuration list for PBXNativeTarget "3DSCANER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66826FA820590EDE006BBE36 /* Debug */,
+				66826FA920590EDE006BBE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66826F8D20590EDD006BBE36 /* Project object */;
+}
