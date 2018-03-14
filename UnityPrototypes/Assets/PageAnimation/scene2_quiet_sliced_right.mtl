@@ -1,0 +1,24 @@
+# Blender MTL File: 'scene2_quiet_sliced_right.blend'
+# Material Count: 2
+
+newmtl tab_Material_u1_v1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\moyi\Documents\Desktop\notImportant\scene2\tab_u1_v1.jpg
+
+newmtl tab_Material_u1_v1_NONE
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\moyi\\Documents\\Desktop\\notImportant\\scene2\\tab_u1_v1.jpg
