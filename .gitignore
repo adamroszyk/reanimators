@@ -1,5 +1,9 @@
 .DS_Store
 
+*.blend1
+*.blend2
+*.blend3
+
 /UnityVRTK/[Ll]ibrary/
 /UnityVRTK/[Tt]emp/
 /UnityVRTK/[Oo]bj/
@@ -7,6 +11,14 @@
 /UnityVRTK/[Bb]uilds/
 /UnityVRTK/Assets/AssetStoreTools*
 /UnityVRTK/Assets/VRTK/Examples*
+
+/UnityPrototypes/[Ll]ibrary/
+/UnityPrototypes/[Tt]emp/
+/UnityPrototypes/[Oo]bj/
+/UnityPrototypes/[Bb]uild/
+/UnityPrototypes/[Bb]uilds/
+/UnityPrototypes/Assets/AssetStoreTools*
+/UnityPrototypes/Assets/VRTK/Examples*
 
 # Visual Studio 2015 cache directory
 /.vs/
