@@ -6,10 +6,10 @@ public class PageEvents : MonoBehaviour
 {
     public GameObject bookContent;
     private AudioSource audioEvent;
-
+    
     void Start () {
         audioEvent = GetComponent<AudioSource>();
-
+        
         if (bookContent != null)
         {
             bookContent.SetActive(false);

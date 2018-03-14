@@ -1,0 +1,13 @@
+# Blender MTL File: 'scene3_chair.blend'
+# Material Count: 1
+
+newmtl chair_Material_u1_v1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\moyi\Desktop\chair\chair_u1_v1.jpg
