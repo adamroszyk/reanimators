@@ -1,11 +1,12 @@
 .DS_Store
 
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+/UnityVRTK/[Ll]ibrary/
+/UnityVRTK/[Tt]emp/
+/UnityVRTK/[Oo]bj/
+/UnityVRTK/[Bb]uild/
+/UnityVRTK/[Bb]uilds/
+/UnityVRTK/Assets/AssetStoreTools*
+/UnityVRTK/Assets/VRTK/Examples*
 
 # Visual Studio 2015 cache directory
 /.vs/
