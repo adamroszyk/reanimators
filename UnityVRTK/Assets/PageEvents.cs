@@ -6,6 +6,7 @@ public class PageEvents : MonoBehaviour
 {
     public GameObject bookContent;
     private AudioSource audioEvent;
+    public Animator anim;
     
     void Start () {
         audioEvent = GetComponent<AudioSource>();
@@ -14,6 +15,8 @@ public class PageEvents : MonoBehaviour
         {
             bookContent.SetActive(false);
         }
+
+        anim = GetComponent<Animator>();
 	}
 
     public void playSound()
@@ -29,6 +32,14 @@ public class PageEvents : MonoBehaviour
         if (bookContent != null)
         {
             bookContent.SetActive(true);
+        }
+    }
+
+    public void resetAnim()
+    {
+        if (anim != null)
+        {
+            anim.SetTrigger("Reset");
         }
     }
 }

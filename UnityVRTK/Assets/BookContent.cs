@@ -15,10 +15,24 @@ public class BookContent : MonoBehaviour
         }
     }
 
-    public PageContent getPage(int i)
+    public PageContent activatePage(int pageNum)
     {
-        Debug.Log(i);
-        Debug.Log(pages[i]);
-        return pages[i];
+        if (pageNum >= pages.Count)
+        {
+            pageNum = 0;
+        }
+
+        for (int i = 0; i < pages.Count; i++)
+        {
+            if (i == pageNum)
+            {
+                pages[i].gameObject.SetActive(true);
+            } else
+            {
+                pages[i].gameObject.SetActive(false);
+            }
+        }
+
+        return pages[pageNum];
     }
 }

@@ -11,6 +11,7 @@ public class TurnPage : MonoBehaviour
     public GameObject leftPage;
     public GameObject rightPage;
     public GameObject turnPage;
+    public GameObject turnReversePage;
 
     private int currentPage;
 
@@ -35,18 +36,16 @@ public class TurnPage : MonoBehaviour
         {
             animRightPage.SetTrigger("MovePage");
 
-            PageContent currContent = bookContent.getPage(currentPage++);
-            PageContent nextContent = bookContent.getPage(currentPage);
+            PageContent currContent = bookContent.activatePage(currentPage);
 
-            currContent.rightPageContainer.transform.SetParent(turnPage.transform);
-            currContent.leftPageContainer.transform.SetParent(leftPage.transform);
             currContent.rightAnimator.SetTrigger("PageDown");
             currContent.leftAnimator.SetTrigger("PageDown");
 
-            nextContent.rightPageContainer.SetActive(true);
-            nextContent.rightPageContainer.transform.SetParent(rightPage.transform);
-            //nextContent.leftPageContainer.transform.SetParent()
+            currentPage++;
 
+            PageContent nextContent = bookContent.activatePage(currentPage);
+
+            nextContent.gameObject.SetActive(true);
 
             if (resetPosition != null && objectToReset != null)
             {
