@@ -30,9 +30,9 @@ namespace DownloadDataFTP
         {
             txtFTPAddress.Text = "ftp://vrowser.e-kei.pl/public_html/HACKATON/";
             txtUsername.Text = "adam";
-            txtPassword.Text = "###Admin123";
+            txtPassword.Text = "***";
 
-            startRefreshing();
+            //startRefreshing();
            // DoAll();
         }
 
@@ -230,7 +230,7 @@ namespace DownloadDataFTP
         }
 
         private void checkIfCanProcess()
-        {
+        {/*
             String searchFolder = Path.GetDirectoryName(Application.ExecutablePath);
             var filters = new String[] { "jpg", "jpeg"};
             var files = GetFilesFrom(searchFolder, filters, false);
@@ -247,9 +247,9 @@ namespace DownloadDataFTP
                 File.Move(file, Path.GetDirectoryName(Application.ExecutablePath) + "\\PHO\\"+ cnt+".jpg");
                 Console.WriteLine("Done transfering files");
             }
-
+            
+            */
             System.Threading.Thread.Sleep(2000);
-
             string strCmdText;
             strCmdText = "automatic_reconstructor --workspace_path WRK --image_path PHO";
             Process.Start("C:/Users/HPZVRBackpack/Desktop/REPO/reanimators/3DSCAN/DownloadAndProcess/bin/Debug/COLMAP", strCmdText);
@@ -274,6 +274,11 @@ namespace DownloadDataFTP
                 filesFound.AddRange(Directory.GetFiles(searchFolder, String.Format("*.{0}", filter), searchOption));
             }
             return filesFound.ToArray();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            checkIfCanProcess();
         }
     }
 }
