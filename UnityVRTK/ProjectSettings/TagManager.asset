@@ -8,6 +8,8 @@ TagManager:
   - LeftPage
   - RightPage
   - Page1
+  - Immerse
+  - ImmerseTrigger
   layers:
   - Default
   - TransparentFX
